@@ -75,10 +75,20 @@ function carrinhoDeCompras(produtosDaCliente) {
             "Bônus": 'Parabéns! Você ganhou um voucher de desconto no valor de R$50,00 para a sua próxima compra!'
         })
     } else {
-        return console.table(notaFiscal)
+        return console.table(cupomFiscal)
     }
+    
+}
+
+function limparArraysDeCalculos () {
+    valorTotal = [] 
+    descontoAplicado = []
 }
 
 carrinhoDeCompras(clienteLilit)
+limparArraysDeCalculos()
+
 carrinhoDeCompras(clienteCris)
+limparArraysDeCalculos()
+
 carrinhoDeCompras(clienteSilvana)
